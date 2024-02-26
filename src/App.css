@@ -1,0 +1,1384 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+*::selection {
+  background: rgb(110, 237, 25);
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(22, 8, 91);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(2, 2, 32);
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.logogo {
+  width: 24vw;
+  height: 10vh;
+  background: url("./Assets/Group 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navelements {
+  margin: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+.navele {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin: 0 2vw;
+  cursor: pointer;
+}
+
+.navbtn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin: 0 2vw;
+  border: 1px solid white;
+  padding: 0.5vw 1vw;
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.homesection,
+.whyussection,
+.howdowedosection,
+.testsection,
+.contactusSection,
+.nursescontainer,
+.logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.howdowedosection,
+.contactusSection {
+  background: rgb(2, 2, 32);
+}
+.testsection,
+.contactusSection,
+.nursescontainer,
+.logincontainer {
+  flex-direction: column;
+  text-align: center;
+}
+
+.nursescontainer {
+  justify-content: space-between;
+}
+.whyussection,
+.testsection,
+.footersection,
+.nursescontainer {
+  background: rgba(2, 2, 32);
+}
+
+.homecontainer,
+.whyuscontainer,
+.howedocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.homecontent {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: bold;
+  width: 50vw;
+  text-wrap: balance;
+}
+.homebtn,
+.whyusbtn,
+.howedobtn,
+.searchnursebtn,
+.loginbtn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin: 2vw;
+  border: 2px solid white;
+  padding: 0.5vw 1vw;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.navbtn:hover,
+.homebtn:hover,
+.whyusbtn:hover,
+.howedobtn:hover,
+.searchnursebtn:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px 5px white;
+}
+
+.homeimg {
+  background: url(./Assets/flat-international-nurses-day-illustration_23-2149372404-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 70vh;
+}
+
+.forbgblur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(90px);
+}
+.meshgradintss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(2, 2, 32);
+  backdrop-filter: blur(90px);
+  overflow: hidden;
+}
+
+.bgshape1 {
+  z-index: -3;
+  width: 500px;
+  height: 500px;
+  border-radius: 9999px;
+  position: relative;
+  animation: one 10s infinite;
+  background: rgb(30, 0, 255);
+  backdrop-filter: blur(90px);
+  opacity: 0.5;
+}
+
+@keyframes one {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -200px;
+    top: 70px;
+  }
+  50% {
+    left: 20px;
+    top: 150px;
+  }
+  75% {
+    left: 50px;
+    top: 100px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.bgshape2 {
+  z-index: -3;
+  width: 400px;
+  height: 400px;
+  border-radius: 9999px;
+  position: relative;
+  animation: two 10s infinite;
+  background: rgb(255, 72, 173);
+  backdrop-filter: blur(90px);
+  opacity: 0.5;
+}
+
+@keyframes two {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -50px;
+    top: 10px;
+  }
+  50% {
+    left: -100px;
+    top: 50px;
+  }
+  75% {
+    left: 50px;
+    top: 100px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.bgshape3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  position: relative;
+  background: rgb(0, 235, 184);
+  backdrop-filter: blur(90px);
+  opacity: 0.5;
+  animation: three 10s infinite;
+}
+
+@keyframes three {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 50px;
+    top: 100px;
+  }
+  50% {
+    left: 400px;
+    top: 200px;
+  }
+  75% {
+    left: 200px;
+    top: 40px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.howedobg {
+  background: url(./Assets/howedonurse.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+
+/* ___________ */
+
+.testsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.testbg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 300vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(2, 2, 32);
+  z-index: -1;
+}
+
+.testblur {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(90px);
+  /* backdrop-filter: blur(10px); */
+}
+
+.testbgshape1 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgb(0, 235, 184);
+  animation: testone1 10s infinite;
+}
+
+.testbgshape2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(0, 47, 255);
+  animation: testone2 10s infinite;
+}
+
+.testbgshape3 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgb(0, 217, 255);
+  animation: testone3 10s infinite;
+}
+
+.testbgshape4 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgb(255, 0, 195);
+  animation: testone4 10s infinite;
+}
+@keyframes testone1 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -200px;
+    top: 100px;
+    width: 300px;
+    height: 300px;
+  }
+  50% {
+    left: 20px;
+    top: 150px;
+  }
+  75% {
+    left: 180px;
+    top: -100px;
+    width: 200px;
+    height: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes testone2 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -50px;
+    top: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  50% {
+    left: 300px;
+    top: 50px;
+  }
+  75% {
+    left: 50px;
+    top: 100px;
+    width: 300px;
+    height: 300px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@keyframes testone3 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 50px;
+    top: 100px;
+  }
+  50% {
+    left: 400px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+  }
+  75% {
+    left: 200px;
+    top: 40px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes testone4 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 100px;
+    top: 200px;
+  }
+  50% {
+    left: 300px;
+    top: 100px;
+  }
+  75% {
+    left: 200px;
+    top: 40px;
+    width: 300px;
+    height: 300px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.testcontainer {
+  width: 80vw;
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testcard {
+  background: transparent;
+  width: 20vw;
+  height: auto;
+  padding: 20px;
+  border: 4px solid white;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.testcard:hover {
+  background: linear-gradient(rgb(2, 2, 32), rgb(2, 2, 32)) padding-box,
+    linear-gradient(to right, darkblue, rgb(50, 160, 204)) border-box;
+  border-radius: 15px;
+  border: 4px solid transparent;
+
+  .testcardcontent {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, darkblue, rgb(50, 160, 204)) border-box;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    color: black;
+  }
+  .testcardimg {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, darkblue, rgb(50, 160, 204)) border-box;
+    border-radius: 50%;
+    border: 4px solid transparent;
+  }
+}
+.testcardcontent {
+  height: auto;
+  text-align: center;
+  background: transparent;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  /* transition: all 0.5s; */
+}
+
+.testcardimgandname {
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  border-radius: 15px;
+}
+
+.testcardimg {
+  margin: 0 10px 5px 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.5s;
+}
+
+.testcardname h4,
+.testcardname p {
+  color: white;
+}
+.contactuscontent h5,
+.contactuscontent h3 {
+  color: white;
+}
+
+.formandcontat {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.contactform,
+.contatcon {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 90%;
+  margin-top: 30px;
+  overflow-y: hidden;
+}
+
+.contatcon {
+  margin-left: -100px;
+}
+
+.name,
+.email,
+.message {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.message {
+  height: auto;
+}
+.contactimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.contactcard {
+  width: 300px;
+  display: flex;
+  gap: 1vw;
+  padding: 2vh;
+  border-radius: 2vh;
+  background: rgba(6, 6, 90, 0.189);
+  border-top: 2px solid rgb(0, 0, 225);
+  border-bottom: 2px solid rgb(0, 0, 75);
+}
+
+.copyicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactusbtn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 400;
+  margin: 0 4vw;
+  border: 2px solid white;
+  padding: 0.5vw 1vw;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+  height: 130px;
+  text-align: center;
+  overflow-y: hidden;
+  margin-top: 30px;
+  margin: 10px;
+}
+
+.contactusbtn:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px 1px white;
+}
+
+.phone h4 {
+  text-align: left;
+}
+
+.Email h4 {
+  text-align: left;
+}
+
+.location h4 {
+  text-align: left;
+}
+
+.name,
+.email {
+  width: 300px;
+  border-radius: 10px;
+  height: 180px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.message {
+  width: 300px;
+  border-radius: 10px;
+  height: 380px;
+  margin: 5px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* why us section */
+.whyussection {
+  background: transparent;
+}
+.gradientbgg {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background: radial-gradient(
+    farthest-corner at 50px 100vh,
+    rgb(0, 0, 225) 0%,
+    rgba(2, 2, 32) 80%
+  ); */
+  /* background: rgb(2, 2, 32); */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 2, 32, 1) 0%,
+    rgba(2, 2, 32, 1) 40%,
+    rgb(0, 0, 75) 100%
+  );
+  z-index: -1;
+}
+
+.whyuscontainer {
+  background: transparent;
+  padding: 4vh;
+  margin: 4vh;
+  border-radius: 2vh;
+  backdrop-filter: blur(10px);
+  background: rgba(6, 6, 90, 0.189);
+}
+.whyusImg {
+  background: url(./Assets/whyusbg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+
+.whyuscontainer {
+  position: relative;
+}
+
+.whyuscontainer h1 {
+  color: white;
+  text-align: center;
+}
+
+.whyuscontainer p {
+  color: white;
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.bgwhyusshape1 {
+  position: relative;
+  top: 55%;
+  left: 45%;
+  z-index: -3;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #000044, #000050);
+  box-shadow: 12px -12px 25px #000027, -12px 12px 25px #00006f;
+}
+
+.bgwhyusshape2 {
+  position: relative;
+  top: 0;
+  left: 80%;
+  z-index: -3;
+  width: 200px;
+  height: 200px;
+  border-radius: 4vh;
+  background: linear-gradient(225deg, #000044, #000050);
+  box-shadow: -20px 20px 40px #000036, 20px -20px 40px #000060;
+}
+/* how we do */
+
+.howwedocontent {
+  background: transparent;
+  padding: 4vh;
+  margin: 4vh;
+  border-radius: 2vh;
+  background: rgba(6, 6, 90, 0.189);
+}
+.howwedocontent h1 {
+  color: white;
+  text-align: center;
+}
+
+.howwedocontent p {
+  color: white;
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* testimonials */
+
+.testcontent h1 {
+  color: white;
+  margin: 10px;
+}
+
+.testcontent p {
+  color: white;
+  margin: 30px;
+}
+
+.contactusSection {
+  background: radial-gradient(
+    circle at 50vw 100px,
+    rgb(0, 0, 225) 0%,
+    rgba(2, 2, 32) 70%,
+    rgba(2, 2, 32) 100%
+  );
+}
+/* footer */
+
+.facebook,
+.linkedin,
+.insta,
+.twitter {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  text-align: center;
+  margin: 10px;
+}
+
+.footercard h1 {
+  color: white;
+  font-size: 1.5vw;
+  margin: 10px;
+}
+
+.footercard p {
+  color: white;
+  margin: 10px;
+}
+
+.footersection {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20%;
+  text-align: center;
+  padding: 1.5vw;
+}
+
+.footerupr,
+.footerlwr {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerupr {
+  flex-direction: row;
+  text-align: left;
+}
+
+.footerlwr {
+  justify-content: space-around;
+}
+
+.footeicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hrrr {
+  margin: 20px;
+  width: 90%;
+}
+
+.searchnursecontainer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  height: 10vh;
+  backdrop-filter: blur(10px);
+}
+
+.searchnurse {
+  width: 25vw;
+  height: 5vh;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.nurselistcontainer {
+  margin-top: 10vh;
+  width: 100vw;
+  height: auto;
+}
+
+.nurselist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+}
+.nursecard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 2vw;
+  width: 20vw;
+  height: 30vh;
+  background: rgb(188, 212, 240);
+  border-radius: 1vw;
+}
+
+.nursecard:hover {
+  transition: all 0.5s;
+  .booknowbtnonhover {
+    transition: all 0.5s;
+    display: inline;
+  }
+}
+.booknowbtnonhover {
+  transition: all 0.5s;
+  display: none;
+  position: relative;
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin: 0 2vw;
+  padding: 0.5vw 1vw;
+  border-radius: 5px;
+  background: rgb(0, 9, 113);
+  cursor: pointer;
+  transition: all 0.5s;
+  color: rgb(42, 173, 255);
+}
+
+.booknowbtnonhover:hover {
+  background: rgb(42, 173, 255);
+  color: rgb(0, 7, 80);
+}
+
+.nurseprofilesection {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(./Assets/nurseprofilebg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.leftpartnurse,
+.rightpartnurse {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 90vh;
+  margin: 2vw;
+}
+
+.rightpartnurse {
+  width: 60vw;
+}
+
+.leftup,
+.leftdown,
+.rightup,
+.rightdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 25vw;
+  height: 40vh;
+  border-radius: 2vw;
+  background: rgba(5, 5, 181, 0.148);
+  backdrop-filter: blur(10px);
+}
+
+.rightup {
+  justify-content: space-evenly;
+}
+.leftup {
+  height: 30vh;
+}
+
+.leftdown {
+  height: 50vh;
+}
+
+.rightup,
+.rightdown {
+  width: 60vw;
+}
+.leftdown p {
+  font-size: 1.5vw;
+}
+
+.leftcrn,
+.leftpwe {
+  margin-top: 2vw;
+  color: rgb(19, 2, 86);
+  font-weight: 800;
+}
+
+.leftupimg {
+  background: white;
+  width: 10vw;
+  height: 20vh;
+  border-radius: 50%;
+  margin: 2vw;
+}
+
+.rightup h1 {
+  font-size: 6vw;
+  font-weight: 800;
+}
+
+.rightup p {
+  font-size: 1.5vw;
+}
+
+.rightleft,
+.rightright {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 80%;
+  margin: 2vw;
+}
+
+.rightdown {
+  flex-direction: row;
+}
+
+.booknowbtn {
+  color: white;
+  background: rgba(0, 69, 148, 0.219);
+  backdrop-filter: blur(10px);
+  border: none;
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 0 2vw;
+  padding: 0.5vw 1vw;
+  border-radius: 1vw;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.booknowbtn:hover {
+  background: rgba(0, 69, 148, 0.5);
+}
+
+.booknowbtn:active {
+  color: rgba(0, 69, 148, 0.8);
+  background: white;
+}
+
+.navbarlogin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: x-large;
+}
+.loginform {
+  width: 20vw;
+}
+.otpform {
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.phonenumber {
+  width: 100%;
+  height: 7vh;
+  padding: 5px 20px;
+  background: rgba(128, 128, 128, 0.167);
+  border: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.loginbtn {
+  background: black;
+  color: white;
+  width: 100%;
+  height: 7vh;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.loginbtn:hover {
+  background: rgba(0, 0, 0, 0.774);
+}
+
+.otpinput {
+  display: flex;
+  gap: 2vw;
+}
+
+.react-otp-input input {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.react-otp-input .otp-input-container input {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.otp-input input {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dashboardcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(214, 236, 255, 0.509);
+}
+
+.dashleftcon {
+  width: 20vw;
+  height: 96vh;
+  border: none;
+  border-radius: 1vw;
+  background: white;
+  border: 5px solid rgba(51, 160, 255, 0.235);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.495);
+}
+
+.dashrightcon {
+  width: 75vw;
+  height: 96vh;
+  border-radius: 1vw;
+  background: white;
+  border: 5px solid rgba(51, 160, 255, 0.235);
+  text-align: center;
+}
+
+.dashlogo {
+  color: black;
+  width: 100%;
+  height: 6%;
+}
+.dashmainmenu {
+  height: 50%;
+  width: 100%;
+  padding: 1vw;
+  border-radius: 20px;
+  text-align: left;
+}
+.dashmainmenu h4 {
+  color: black;
+}
+.dashulele h3 {
+  color: black;
+  width: 100%;
+  height: 10%;
+}
+.dashulele {
+  list-style: none;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashulele ul,
+.dashaccount ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashulele li,
+.dashaccount li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 15%;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 20px;
+}
+.dashulele li:hover,
+.dashaccount li:hover {
+  background: rgb(12, 141, 255);
+  color: white;
+  #dashboard {
+    fill: white;
+  }
+}
+#dashboard {
+  height: 4vh;
+}
+.dashaccount {
+  width: 100%;
+  height: 35%;
+  padding: 1vw;
+  text-align: left;
+}
+.dashaccount li {
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+.dashaccount h4 {
+  color: black;
+}
+.dashuser {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dashprofilephoto {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid rgba(51, 160, 255, 0.47);
+}
+
+@media (max-width: 500px) {
+  .logogo {
+    display: none;
+  }
+  .navbar {
+    top: 88vh;
+    left: 0;
+    justify-content: space-around;
+    backdrop-filter: blur(90px);
+    margin: 1vw;
+    border-radius: 4vw;
+    padding: 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .navele {
+    font-size: 3.5vw;
+  }
+  .navbtn {
+    font-size: 3.5vw;
+  }
+  .homeimg,
+  .whyusImg,
+  .howedobg {
+    display: none;
+  }
+
+  .homecontent {
+    font-size: 10vw;
+    width: 90%;
+    height: 100%;
+  }
+  .homebtn,
+  .whyusbtn,
+  .howedobtn,
+  .searchnursebtn,
+  .loginbtn {
+    font-size: 4vw;
+  }
+  .whyuscontainer {
+    text-wrap: wrap;
+  }
+  .whyuscontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 50vh;
+    text-wrap: balance;
+    text-wrap: wrap;
+  }
+  .whyuscontent p,
+  .howwedocontent p {
+    width: 80vw;
+  }
+
+  .testcontainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    width: 100%;
+  }
+  .testcard {
+    width: 100%;
+    height: 36vh;
+  }
+  .formandcontat {
+    flex-direction: column;
+  }
+
+  .contactform,
+  .contatcon {
+    margin-top: 0px;
+    width: 90%;
+    height: 100%;
+  }
+
+  .name,
+  .email {
+    width: 100%;
+    height: 8vh;
+    border-radius: 4vw;
+  }
+  .message {
+    width: 100%;
+    height: 20vh;
+    border-radius: 4vw;
+  }
+
+  .contactusbtn {
+    width: 60%;
+    height: 8vh;
+    font-size: 2.5vh;
+  }
+
+  .contatcon {
+    display: none;
+  }
+}
