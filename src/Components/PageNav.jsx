@@ -25,7 +25,7 @@ function PageNav() {
               .scrollIntoView({ behavior: "smooth" });
           }}
         >
-          Why Us
+          Why us
         </li>
         <li
           className="navele"
