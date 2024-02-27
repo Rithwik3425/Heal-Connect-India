@@ -1284,7 +1284,7 @@ section {
     display: none;
   }
   .navbar {
-    top: 88vh;
+    top: 80vh;
     left: 0;
     justify-content: space-around;
     backdrop-filter: blur(90px);
@@ -1380,5 +1380,59 @@ section {
 
   .contatcon {
     display: none;
+  }
+
+  .otpform {
+    width: 80vw;
+  }
+  .loginform {
+    width: 80vw;
+  }
+
+  .otpinputinput {
+    width: 9vw;
+    height: 9vw;
+  }
+  .nurselist {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4vw;
+  }
+
+  .nursecard {
+    width: 95vw;
+  }
+
+  .booknowbtnonhover {
+    font-size: 5vw;
+  }
+
+  .nurseprofilesection {
+    flex-direction: column;
+    height: auto;
+  }
+  .leftpartnurse,
+  .rightpartnurse {
+    flex-direction: column;
+    width: 80vw;
+  }
+  .leftup {
+    height: auto;
+    width: 100%;
+  }
+
+  .leftupimg {
+    height: 20vh;
+    width: 40vw;
+  }
+
+  .leftup,
+  .leftdown,
+  .rightup,
+  .rightdown {
+    width: 90vw;
+  }
+
+  .leftdown h1 {
+    font-size: 2vw;
   }
 }

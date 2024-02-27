@@ -14,7 +14,7 @@ function NurseProfile() {
             <div className="leftupimg"></div>
           </div>
           <div className="leftdown">
-            <h2>work___________________</h2>
+            <h2>Work</h2>
             <div>
               <p className="leftcrn">Council Registration Number: </p>
               <p>{nurse.councilRegistrationNumber}</p>

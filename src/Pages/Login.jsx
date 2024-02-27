@@ -53,12 +53,13 @@ function Login() {
 
   return (
     <div className="logincontainer">
-      <div className="navbarlogin">Nursing Care</div>
+      <div className="navbarlogin">HealConnect </div>
       {showOtp ? (
         <div>
           <div className="otpform">
             <h1>Enter the 6-digit code sent to you </h1>
             <OTPInput
+              className="otpinputinput"
               value={otp}
               onChange={setOtp}
               numInputs={6}
@@ -72,6 +73,8 @@ function Login() {
                 borderRadius: "5px",
                 border: "1px solid black",
                 textAlign: "center",
+                maxWidth: "9vw",
+                maxHeight: "9vw",
               }}
             />
             <button type="submit" className="loginbtn" onClick={onVerify}>
